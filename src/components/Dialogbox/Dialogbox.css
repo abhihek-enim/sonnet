@@ -1,0 +1,58 @@
+
+.popup-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it is on top of other elements */
+  }
+  
+  .popup-dialog {
+    background: white; /* Background color of the dialog */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the dialog */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 500px; /* Set a width for the dialog */
+  }
+  
+  h2 {
+    margin: 0 0 20px; /* Margin below the heading */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above the button container */
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .save-button {
+    background-color: #f7aa06; /* Button color */
+    color: white; /* Text color */
+  }
+  
+  .save-button:hover {
+    background-color: #d68a03; /* Darker shade on hover */
+  }
+  
+  .cancel-button {
+    background-color: #ccc; /* Button color */
+    color: black; /* Text color */
+  }
+  
+  .cancel-button:hover {
+    background-color: #bbb; /* Darker shade on hover */
+  }
+  

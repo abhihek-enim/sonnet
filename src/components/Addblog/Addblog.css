@@ -1,0 +1,41 @@
+.add-blog-container {
+  display: flex;
+  background-color: #e9a848;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.blog-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.profile-pic {
+  max-width: 65px;
+  border-radius: 50%;
+}
+.blog-input {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    width: 240px;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect behind the element */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  /* Add a hover effect for interactivity */
+.blog-input:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly increase opacity on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  }
