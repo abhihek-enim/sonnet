@@ -15,7 +15,7 @@
   min-width: 700px;
   border-radius: 10px;
 }
-.profile-pic {
+.profile-picture {
   max-width: 240px;
   aspect-ratio: 1/1;
   margin: 20px auto;
@@ -23,7 +23,7 @@
   box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.profile-pic:hover {
+.profile-picture:hover {
   transform: scale(1.05);
   box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.3);
 }

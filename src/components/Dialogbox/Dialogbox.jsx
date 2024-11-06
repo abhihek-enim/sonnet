@@ -21,13 +21,31 @@ const Dialogbox = ({ isOpen, onClose }) => {
       <div className="popup-dialog">
         <h2>Add Your Content</h2>
         <CKEditor
-          editor={ClassicEditor}
-          data={content}
-          onChange={(event, editor) => {
-            const data = editor.getData();
-            setContent(data);
-          }}
-        />
+      editor={ClassicEditor}
+      data={content}
+      onChange={(event, editor) => {
+        const data = editor.getData();
+        setContent(data);
+      }}
+      config={{
+        toolbar: [
+          "bold",
+          "italic",
+          "underline",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "blockQuote",
+          // Removed image and image upload buttons
+        ],
+        removePlugins: [ 
+          "ImageToolbar", 
+          "ImageUpload", // Remove image upload plugin
+          "EasyImage"    // Remove EasyImage plugin
+        ],
+      }}
+    />
+
         <div className="button-container">
           <button onClick={handleSave} className="save-button">
             Save
